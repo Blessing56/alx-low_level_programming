@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * this is a script
- * it prints a string
- * using the printf function
+ * main - print a string
+ * Description: printf
+ * Rturn: 0
  */
 
 int main(void)

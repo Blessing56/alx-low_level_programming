@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print a string
+ * main - print a strng
  * Description: printf
  * Rturn: 0
  */

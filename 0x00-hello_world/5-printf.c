@@ -1,14 +1,11 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
- * main - print a strng
- * Description: printf
- * Rturn: 0
- */
-
-int main(void) /* Use function printf() and returns 0 */
+ * *main - print string
+ * *
+ * * Return: Always 0
+ * */
+int main(void)
 {
-
-	printf("%s", "with proper grammar, but the outcome is a piece of art,\n");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }

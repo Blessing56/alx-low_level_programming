@@ -10,6 +10,7 @@
 int main(void)
 {
 	int digit = 0;
+
 	while (digit <= 15)
 	{
 		printf("%x", digit);

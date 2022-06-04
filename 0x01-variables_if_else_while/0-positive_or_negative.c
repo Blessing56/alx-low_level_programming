@@ -3,7 +3,12 @@
 #include <stdio.h>
 
 
-/* more headers goes there */
+/**
+ * more headers goes there
+ * main : positive or negative test
+ * Description: prints the status if the value is positive or negative
+ * Return: 0 is program is successful
+ */
 
 /* betty style doc for function main goes there */
 int main(void)
@@ -12,7 +17,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n<0)
+	if (n < 0)
 {
 	printf("%d is negative\n", n);
 }

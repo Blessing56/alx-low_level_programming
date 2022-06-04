@@ -11,6 +11,7 @@
 int main(void)
 {
 	char lt = 'a';
+
 	while (lt <= 'z')
 	{
 		if (lt == 'e' || lt == 'q')

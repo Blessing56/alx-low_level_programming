@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Point of Entry
+ * main - Exempt characters
  *
  * Description: print alphabet in lowercase then in uppercase
  *
@@ -10,20 +10,15 @@
 
 int main(void)
 {
-	char ch = 'a';
-	char CH = 'A';
-
-	/* prints a - z */
-	while (ch <= 'z')
+	char lt = 'a';
+	
+	while (lt <= 'z')
 	{
-		putchar(ch);
-		++ch;
-	}
-	/* print A - Z */
-	while (CH <= 'Z')
-	{
-		putchar('\n');
-		++CH;
+		if (lt == 'e' || lt == 'q')
+			lt++;
+	
+		putchar(lt);
+		lt++;
 	}
 	putchar('\n');
 

@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
- *  * main - Alphabets print is fun
- *   * Description: Printing char alphabets
- *    * Return: 0 if successful
+ * main - Printing alphabets is fun
+ * Description: Printing char alphabets
+ * Return: 0 if successful
  */
 
 int main(void)
@@ -13,8 +12,9 @@ int main(void)
 	while (alpha <= 'z')
 	{
 		putchar(alpha);
-		alpha++;				
+		alpha++;
 	}
 	putchar('\n');
+
 	return (0);
 }

@@ -4,7 +4,6 @@
 
 
 /**
- * more headers goes there
  * main : positive or negative test
  * Description: prints the status if the value is positive or negative
  * Return: 0 is program is successful

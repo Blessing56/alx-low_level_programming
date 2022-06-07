@@ -12,7 +12,6 @@ void print_alphabet_x10(void)
 	while (a < 10)
 	{
 		b = 97;
-		
 		while (b <= 122)
 		{
 			_putchar(b);
@@ -20,7 +19,6 @@ void print_alphabet_x10(void)
 			b++;
 		}
 		_putchar('\n');
-		
 		a++;
 	}
 }

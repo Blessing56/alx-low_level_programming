@@ -2,7 +2,8 @@
 #include <stdbool.h>
 
 /**
- * print_alphabet - function that print lowercase alphabet  
+ * print_alphabet - function that print lowercase alphabet
+ *
  */
 
 void print_alphabet(void)

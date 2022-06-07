@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 /**
- * print_alphabet - function that prints lowercase alphabet 10 times
+ * print_alphabet_x10 - function that prints lowercase alphabet 10 times
  */
 
 void print_alphabet_x10(void)

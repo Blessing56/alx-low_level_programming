@@ -8,15 +8,17 @@
 
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+    char putCharStr[] = "_putchar";
+    int lengthOfCharStr = sizeof(putCharStr) / sizeof(putCharStr[0]);
 
-	return (0);
+    int i;
+
+    char firstAlphabet = 'c';
+
+    for (i = 0; i < lengthOfCharStr - 1; i++)
+    {
+            _putchar(putCharStr[i]);
+        }
+    _putchar('\n');
+    return (0);
 }

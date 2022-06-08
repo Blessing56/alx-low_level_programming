@@ -24,48 +24,29 @@ void times_table(void)
 
 		{
 
-			value = (row * column);
+		value = (row * column);
 
-			if (column == 0)
+		if (column == 0)
+		{
+		_putchar('0' + value);
+		}
+		else if (value <= 9)
 
-			{
-
-				_putchar('0' + value);
-
-			}
-
-			else if (value <= 9)
-
-			{
-
-				_putchar(',');
-
-				_putchar(' ');
-
-				_putchar(' ');
-
-				_putchar('0' + value);
-
-			}
-
-			else if (value > 9)
-
-			{
-
+		{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar('0' + value);
+		}
+		else if (value > 9)
+		{
 			_putchar(',');
-
 			_putchar(' ');
-
 			_putchar('0' + (value / 10));
-
 			_putchar('0' + (value % 10));
-
-			}
-
 		}
 
-		_putchar('\n');
-
 	}
-
+	_putchar('\n');
+	}
 }

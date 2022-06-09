@@ -1,12 +1,11 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * print_numbers - prints the munbers from 0 to 9 followed by a new line
  * Return: 0 always
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 

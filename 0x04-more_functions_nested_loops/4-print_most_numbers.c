@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - prints the munbers from 0 to 9 followed by a new line
- * Return: 0 always
+ * print_most_numbers - prints the munbers from 0 to 9 followed by a new line
  */
 
 void print_most_numbers(void)

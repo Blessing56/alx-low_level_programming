@@ -3,16 +3,22 @@
 
 /**
  * print_numbers - prints the munbers from 0 to 9 followed by a new line
+ * Return: 0 always
  */
 
 void print_numbers(void)
 {
-	int i = 0;
+	int i;
 
-	while (i <= 10)
+	for (i = 48; i <= 57; i++)
 	{
-		_putchar(i + '0');
-		i++;
+		if (i == 50 || i == 52)
+		{
+		}
+		else
+		{
+			_putchar(i);
+		}
 	}
 	_putchar('\n');
 }

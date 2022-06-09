@@ -9,15 +9,15 @@
 
 int _isdigit(int c)
 {
-	c = 0;
+	int i = isdigit(c);
 
-	while (c <= 9)
+	if (i > 0)
 	{
-		_putchar(c);
-		_putchar('\n');
-		c++;
+		return (1);
 	}
-
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
 

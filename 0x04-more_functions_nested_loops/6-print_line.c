@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * print_line - function that draws a straight line in the terminal
@@ -8,13 +7,15 @@
 
 void print_line(int n)
 {
-	char i = '_';
+	int i = 0;
 
-	n = 0;
-
-	while (n <= 0, n <= 10)
+	while (n < 0)
 	{
-		_putchar(i);
+		if (n <= 0)
+		{
+			_putchar('\n');
+		}
+		i++;
 	}
 	_putchar('\n');
 }

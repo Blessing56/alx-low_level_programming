@@ -1,29 +1,34 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints a line n chars long.
- * @n: number of \.
- * Return: void.
+ * print_square - function that prints a square followed by a newline
+ * @size: integer return type
  */
 
-void print_diagonal(int n)
-{
-	int i, space;
 
-	if (n <= 0)
+
+void print_square(int size)
+{
+	int i = 0, j;
+
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (i = 0; i < n; i++)
+		while (i < size)
 		{
-			for (space = 0; space < i; space++)
+			j = 0;
+
+			while (j < size)
 			{
-				_putchar(' ');
+				_putchar('#');
+				j++;
 			}
-			_putchar(92);
 			_putchar('\n');
+			i++;
 		}
 	}
 }
+

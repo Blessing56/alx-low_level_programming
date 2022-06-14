@@ -9,14 +9,35 @@
 
 void rev_string(char *s)
 {
-	int i = 0;
+
+	int i, l = 0;
 
 
-	while (s[i])
-	i++;
 
-	while (i--)
+	char b[500];
+
+
+
+	strcpy(b, s);
+
+
+
+	while (*(s + l) != '\0')
+
 	{
-		_putchar(s[i]);
+
+		l++;
+
 	}
+
+
+
+	for (i = 0; i < l; i++)
+
+	{
+
+		*(s + i) = *(b + l - (i + 1));
+
+	}
+
 }

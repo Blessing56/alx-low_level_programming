@@ -20,17 +20,3 @@ char *string_toupper(char *c)
 	}
 	return (c);
 }
-
-/**
- * int i = toupper(c);
- * if (i > 0)
- * {
- * return (*c);
- * }
- * else
- * {
- * return (0);
- * }
- * }
- */
-

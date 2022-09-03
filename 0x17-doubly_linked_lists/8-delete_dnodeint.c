@@ -3,14 +3,14 @@
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position
  * @h: pointer to headnode pointer
- * @idx: the index of the list where the new node
- * should be added. Index starts at 0
+ * @idx: the index of the list where the new node should be added. Index starts at 0
  * @n: data tobe stored in the newnode
+ *
  * Return: the address of the new node, or NULL if it failed
  */
 
 
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *tmp = *h, *new;
 

@@ -1,37 +1,38 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - inserts a new node at a given position
- * @h: pointer to headnode pointer
- * @idx: the index of the list where the new node should be added. Index starts at 0
- * @n: data tobe stored in the newnode
- *
- * Return: the address of the new node, or NULL if it failed
+ * delete_dnodeint_at_index - deletes the node at
+ * index of a dlistint_t linked list.
+ * @head: pointer to headnode pointer
+ * @index: index to be deleted
+ * Return: 1 if it succeeded, -1 if it failed
  */
-
-
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *tmp = *h, *new;
+	dlistint_t *tmp = *head;
 
-	if (idx == 0)
-		return (add_dnodeint(h, n));
-	for (; idx != 1; idx--)
+	if (*head == NULL)
+		return (-1);
+
+	for (; index != 0; index--)
 	{
-		tmp = tmp->next;
 		if (tmp == NULL)
-			return (NULL);
+			return (-1);
+		tmp = tmp->next;
 	}
-	if (tmp->next == NULL)
-		return (add_dnodeint_end(h, n));
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
-		return (NULL);
-	new->n = n;
-	new->prev = tmp;
-	new->next = tmp->next;
-	tmp->next->prev = new;
-	tmp->next = new;
 
-	return (new);
+	if (tmp == *head)
+	{
+		*head = tmp->next;
+		if (*head != NULL)
+			(*head)->prev = NULL;
+	}
+	else
+	{
+		tmp->prev->next = tmp->next;
+		if (tmp->next != NULL)
+			tmp->next->prev = tmp->prev;
+	}
+	free(tmp);
+	return (1);
 }
